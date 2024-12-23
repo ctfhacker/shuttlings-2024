@@ -1,0 +1,31 @@
+[package]
+name = "shuttlings-cch24"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.4", features = ["macros", "multipart"] }
+axum-extra = { version = "0.9.6", features = ["typed-header"] }
+bon = "3.3.0"
+cargo-manifest = "0.17.0"
+chrono = "0.4.39"
+headers = "0.4.0"
+http = "1.1.0"
+http-body-util = "0.1.2"
+jsonwebtoken = "9.3.0"
+leaky-bucket = "1.1.2"
+mime = "0.3.17"
+rand = "0.8.5"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.133"
+serde_yaml = "0.9.34"
+shuttle-axum = "0.49.0"
+shuttle-runtime = "0.49.0"
+shuttle-shared-db = { version = "0.49.0", features = ["postgres", "sqlx"] }
+sqlx = { version = "0.8.2", features = ["postgres", "time", "uuid", "chrono"] }
+tokio = "1.28.2"
+toml = "0.8.19"
+tower = "0.5.1"
+tower-http = { version = "0.6.2", features = ["fs"] }
+uuid = { version = "1.11.0", features = ["v4"] }
+v_htmlescape = "0.15.8"
